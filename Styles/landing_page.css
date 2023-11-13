@@ -8,17 +8,20 @@ hr {
 }
 
 ul {
-	margin: 0px;
+	font-family: Tahoma, sans-serif;
 	font-size: 25px;
+	margin: 0px;
 }
 
 body {
-	margin-top: 10%;
+	font-family: "arial";
+	margin-top: 15%;
 	background-color: lightgray;
 }
 
 h1 {
-	font: 4vw "FiraMono";
+	font-family: Arial, sans-serif;
+	font-size: 75px;
 	margin: 0px;
 	padding: 0px;
 	white-space: nowrap;
@@ -31,8 +34,8 @@ img {
 }
 
 p {
-	font-size: 125%;
-	margin-bottom: 25px;
+	font-style: italic;
+	font-size: 25px;
 }
 
 a {
@@ -41,9 +44,8 @@ a {
 	text-decoration: none;
 	justify-content: center;
 	color: white;
-	margin-top: 10px;
-	margin-right: 10px;
 	background-color: #454955;
+	margin: 10px;
 	font-size: 120%;
 	width: 200px;
 	height: 50px;
@@ -78,6 +80,7 @@ a:hover {
 .wrapper {
 	display: flex;
 	flex-direction: column;
+	justify-items: center;
 	align-items: center;
 }
 
@@ -88,11 +91,17 @@ a:hover {
 	align-items: center;
 }
 
-.beside, .button_container {
+.beside {
 	width: 100%;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	flex-direction: row;
+}
+
+.button_container {
+	width: 100%;
+	display: flex;
+	border-style: ;
 	flex-direction: row;
 }
 
@@ -113,23 +122,22 @@ a:hover {
 	}
 
 	p {
-		font-size: 3.5vw;
+		font-size: 4.0vw;
 	}
 
 	h1 {
-		font-size: 9vw;
+		font-size: 10vw;
 	}
 
 	a {
-		margin: 10px;
+		margin: 15px;
 		font-size: 50px;
 		width: 90vw;
 		height: 200px;
 	}
 
 	img {
-		width: 350px;
-		height: 350px;
+		display: none;
 	}
 }
 
