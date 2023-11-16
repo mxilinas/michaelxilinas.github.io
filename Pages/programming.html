@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="project.css">
+</head>
+
+	<body>
+
+		<h1>Table of Contents</h1>
+		<ul>
+			<li><a href="programming.html#blendo">Blendo</a></li>
+			<li><a href="programming.html#...">Normal Map Generator</a></li>
+			<li><a href="programming.html#...">Tik-Tak-Toe Solver</a></li>
+			<li><a href="programming.html#...">Slime Mold Simulation</a></li>
+		</ul>
+		<hr>
+
+		<h2 id="blendo">Blendo</h2>
+		<p>Winner of the COGS 300 robot tournament.</p>
+		<p>
+		Working in a team,
+		I programmed a virtual robot to compete in a tournament against AI-controlled robots created by other students.
+		</p>
+
+		<figure>
+			<img src="../Images/blendo.png">
+			<figcaption><i>3D render of Blendo, modelled and textured by me.</i></figcaption>
+		</figure>
+
+		<h2>The Name</h2>
+		<p>
+		In the late 1990s,
+		Adam savage and Jamie Hyneman, best known for thier roles on Mythbusters,
+		built a combat robot, Blendo, for the TV show BattleBots.
+		Blendo was so effective that its design was banned from future competition.
+		We named our robot after Blendo hoping to leave a similar legacy.
+		</p>
+
+		<h2>The Task</h2>
+		<p>
+		Our robot needed to collect green spheres and return them to its home base.
+ 		The robot with the most spheres after 2 minutes was deemed the winner.
+
+		<br>
+		<br>
+
+		The robots had the ability to turn,
+		move forward,
+		and shoot lasers at their opponents, causing them to freeze and drop their spheres.
+
+		<br>
+		<br>
+
+		In order to win, we needed to come up with a solution that handled both locomotion and strategy.
+		We were allowed to use machine learning, an explicitly coded algorithm, or a combination of both.
+		</p>
+
+		<h2>The Solution</h2>
+		<p>
+		After countless hours of training using reinforcement learning,
+		we realized that our problem was too complex for a purely AI solution.
+		In the end, we decided to hard-code all of Blendo's behaviors with a strategy inspired by our initial attempts at machine learning.
+		We observed that the most successful models collected balls until they possessed the majority,
+		then they switched their focus to offense.
+		<br>
+		<br>
+		here's a recording Blendo in action during the championship match of the tournament.
+		</p>
+
+		<figure>
+			<video src="../Videos/blendo.mp4" controls>
+		</figure>
+
+		<h2>Lessons Learned</h2>
+		<p>
+		Some tasks are much better suited for machine learning than others.
+
+		</p>
+
+	</body>
+
+</html>
