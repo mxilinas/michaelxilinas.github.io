@@ -1,124 +1,136 @@
 html { scroll-behavior: smooth; }
 
-embed {
-	position: absolute;
-	margin-top: 100vh;
-	width: 100%;
-	height: 100%;
+body {
+	background-color: black;
+	font-family: "arial";
+	margin: 0px;
+}
+
+img {
+	border: solid white 3px;
+	width: 200px;
+	height: 200px;
+	margin-right: 26px;
+}
+
+h1 {
+	color: white;
+	font-size: 80px;
+	white-space: nowrap;
+	margin: 0px;
 }
 
 ul {
 	font-family: monospace;
-	font-size: 25px;
-	margin: 0px;
+	margin-top: 0px;
+	font-size: 22px;
+	font-style: oblique;
+	color: white;
 }
 
-body {
-	font-family: "arial";
-	margin-top: 30vh;
-	background-color: lightgray;
+hr {
+	margin-bottom: 12px;
+	color: white;
+	width: 800px;
 }
 
-h1 {
-	font-size: 75px;
-	margin: 0px;
-	padding: 0px;
-	white-space: nowrap;
-}
-
-img {
-	padding-right: 20px;
-	width: 250px;
-	height: 250px;
-}
-
-p {
-	font-style: italic;
-	font-size: 25px;
-}
-
+/* Buttons */
 a {
 	display: flex;
 	align-items: center;
-	text-decoration: none;
 	justify-content: center;
 	color: white;
-	background-color: #454955;
-	margin: 10px;
-	font-size: 120%;
+	text-decoration: none;
+	background-color: #7b8c93;
+	margin-bottom: 16px;
+	font-size: 20px;
+	font-weight: bold;
 	width: 200px;
 	height: 50px;
-	border: none;
-	border-radius: 5px;
-	box-shadow: 5px 5px black;
+	border-radius: 3px;
+	box-shadow: -8px 8px #2b2b2b;
+}
+
+a:active {
+	position: relative;
+	animation-name: push;
+	animation-duration: 0.1s;
+}
+
+a:hover {
+	background-color: darkgray;
 }
 
 @keyframes push {
 	from {top: 0px; left: 0px;}
-	to {top: 5px; left: 5px; box-shadow: 0px 0px black;}
+	to {top: 8px; left: -8px; box-shadow: 0px 0px #2b2b2b;}
 }
 
-a:active {
-	animation-name: push;
-	animation-duration: 0.1s;
-	position: relative;
+.portfolio { background-color: #d11a28 }
+.portfolio:hover { background-color: #ea5c66; }
+
+embed {
+	width: 100%;
+	height: 98vh;
+	margin-bottom: 16px;
 }
 
-a:hover {
-	background-color: gray;
-}
-
-.contact:hover {
-	background-color: red;
-}
-
-.contact {
-	background-color: #d62828;
-}
-
+/* Alignment */
 .center {
-	display: flex;
-	flex-direction: column;
-	justify-items: center;
+	justify-content: center;
 	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	display: flex;
 }
+
+.column {
+	margin-left: 80px;
+	margin-right: 80px;
+	height: 100%;
+}
+
 
 .beside {
+	width: fit-content;
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 100%;
 }
 
-.button_container {
-	width: 100%;
+
+.above {
 	display: flex;
-	border-style: ;
-	flex-direction: row;
+	flex-direction: column;
+}
+
+.bg-image {
+	z-index: -1;
+	position: fixed;
+	height: 100%;
+	width: 100vw;
+	background-image: url('Images/road.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	filter: blur(16px);
 }
 
 /* Stack and resize on mobile */
 @media only screen and (max-width: 1000px) {
-	.button_container {
+
+	.center {
 		display: flex;
+		width: 100%;
+		height: 100vh;
+	}
+
+	.above {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.beside {
 		flex-direction: column;
-	}
-
-	hr {
-		height: 3px;
-		background-color: black;
-	}
-
-	ul {
-		font-size: 4.5vw;
-	}
-
-	p {
-		font-size: 4.0vw;
-	}
-
-	h1 {
-		font-size: 10vw;
+		align-items: center;
+		justify-content: center;
 	}
 
 	a {
@@ -128,12 +140,19 @@ a:hover {
 		height: 200px;
 	}
 
-	img {
-		display: none;
-	}
-}
+	hr { display: none; }
 
-.above {
-	display: flex;
-	flex-direction: column;
+	h1 {
+		font-size: 100px;
+		margin-bottom: 100px;
+	}
+
+	ul { display: none; }
+
+	.headshot {
+		margin-top: 200px;
+		margin-bottom: 100px;
+		width: 350px;
+		height: 350px;
+	}
 }
