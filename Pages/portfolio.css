@@ -1,13 +1,14 @@
 body {
-	margin-top: 20px;
 	background-color: rgba(0,0,0,0.0);
 	font-family: Monospace;
+	margin-top: 15px;
 	overflow: hidden;
 }
 
 a { font-size: 16px; }
 
 embed {
+	background: gray;
 	width: 100%;
 	height: 100%;
 }
@@ -42,12 +43,21 @@ embed {
 
 .tab-content {
 	position: absolute;
+	top: calc(70px + 46px);
+	left: 30px;
+	width: calc(100% - 60px);
+	height: calc(100% - 146px);
 	opacity: 0;
-	left: 0px;
-	width: 100%;
-	height: 100%;
 	background-color: darkgray;
 	transition: opacity .5s;
+}
+
+.bg {
+	position: absolute;
+	left: 0px;
+	background: darkgray;
+	width: 100%;
+	height: 100%
 }
 
 .tab-button { display: none; }
@@ -60,11 +70,4 @@ embed {
 .tab-button:checked ~ .tab-content {
 	opacity: 1;
 	z-index: 1;
-}
-
-.bg {
-	position: absolute;
-	background: darkgray;
-	width: 100%;
-	height: 100%
 }

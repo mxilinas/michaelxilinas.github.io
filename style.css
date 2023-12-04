@@ -22,15 +22,17 @@ h1 {
 
 ul {
 	font-family: monospace;
-	margin-top: 0px;
+	margin-top: 12px;
 	font-size: 22px;
 	font-style: oblique;
 	color: white;
 }
 
 hr {
-	margin-bottom: 12px;
+	margin-bottom: 24px;
 	color: white;
+	background: white;
+	height: 5px;
 	width: 800px;
 }
 
@@ -70,9 +72,9 @@ a:hover {
 .portfolio:hover { background-color: #ea5c66; }
 
 embed {
-	width: 100%;
+	width: 90%;
 	height: 98vh;
-	margin-bottom: 16px;
+	margin-bottom: 20px;
 }
 
 /* Alignment */
@@ -90,12 +92,10 @@ embed {
 	height: 100%;
 }
 
-
 .beside {
 	width: fit-content;
 	display: flex;
 }
-
 
 .above {
 	display: flex;
